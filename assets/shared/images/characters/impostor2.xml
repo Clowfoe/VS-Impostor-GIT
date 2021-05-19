@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="impostor2.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="impostor down0000" x="0" y="0" width="508" height="288" frameX="-13" frameY="-17" frameWidth="521" frameHeight="306"/>
+	<SubTexture name="impostor down0001" x="538" y="0" width="515" height="306" frameX="0" frameY="0" frameWidth="521" frameHeight="306"/>
+	<SubTexture name="impostor idle0000" x="1083" y="0" width="549" height="538" frameX="-76" frameY="-3" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0001" x="1662" y="0" width="572" height="532" frameX="-67" frameY="-9" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0002" x="2264" y="0" width="665" height="509" frameX="0" frameY="-32" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0003" x="2959" y="0" width="666" height="510" frameX="-3" frameY="-31" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0004" x="0" y="568" width="630" height="526" frameX="-25" frameY="-15" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0005" x="660" y="568" width="555" height="541" frameX="-64" frameY="0" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor idle0006" x="1083" y="0" width="549" height="538" frameX="-76" frameY="-3" frameWidth="669" frameHeight="541"/>
+	<SubTexture name="impostor left0000" x="1245" y="568" width="583" height="364" frameX="0" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0001" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0002" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0003" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0004" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0005" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0006" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0007" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0008" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor left0009" x="1858" y="568" width="569" height="395" frameX="-36" frameY="0" frameWidth="605" frameHeight="395"/>
+	<SubTexture name="impostor right0000" x="2457" y="568" width="498" height="340" frameX="-28" frameY="0" frameWidth="526" frameHeight="340"/>
+	<SubTexture name="impostor right0001" x="2985" y="568" width="500" height="336" frameX="0" frameY="-3" frameWidth="526" frameHeight="340"/>
+	<SubTexture name="impostor up0000" x="3515" y="568" width="443" height="348"/>
+	<SubTexture name="impostor up0001" x="0" y="1139" width="436" height="338" frameX="-5" frameY="-6" frameWidth="443" frameHeight="348"/>
+</TextureAtlas>

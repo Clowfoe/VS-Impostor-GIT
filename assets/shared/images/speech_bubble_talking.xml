@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="speech_bubble_talking.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Speech Bubble Normal Open0000" x="0" y="0" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="Speech Bubble Normal Open0001" x="30" y="0" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="Speech Bubble Normal Open0002" x="60" y="0" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="Speech Bubble Normal Open0003" x="90" y="0" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="Speech Bubble Normal Open0004" x="120" y="0" width="0" height="0" frameX="-107374182" frameY="-107374182" frameWidth="0" frameHeight="0"/>
+	<SubTexture name="speech bubble normal0000" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0001" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0002" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0003" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0004" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0005" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0006" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0007" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0008" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0009" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0010" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0011" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0012" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0013" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0014" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0015" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0016" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0017" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0018" x="150" y="0" width="1196" height="224"/>
+	<SubTexture name="speech bubble normal0019" x="150" y="0" width="1196" height="224"/>
+</TextureAtlas>

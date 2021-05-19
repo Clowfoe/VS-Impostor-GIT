@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="snowfall.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Snow 10000" x="0" y="0" width="324" height="250" frameX="-43" frameY="0" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10001" x="0" y="0" width="324" height="250" frameX="-43" frameY="0" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10002" x="324" y="0" width="357" height="220" frameX="-35" frameY="-20" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10003" x="324" y="0" width="357" height="220" frameX="-35" frameY="-20" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10004" x="681" y="0" width="389" height="206" frameX="-31" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10005" x="681" y="0" width="389" height="206" frameX="-31" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10006" x="1070" y="0" width="224" height="77" frameX="-30" frameY="-43" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10007" x="1294" y="0" width="224" height="112" frameX="-30" frameY="-8" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10008" x="1518" y="0" width="212" height="122" frameX="-33" frameY="-8" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10009" x="1730" y="0" width="212" height="105" frameX="-33" frameY="-25" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10010" x="0" y="250" width="150" height="70" frameX="-89" frameY="-25" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10011" x="150" y="250" width="150" height="61" frameX="-89" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10012" x="300" y="250" width="135" height="77" frameX="-95" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10013" x="435" y="250" width="135" height="68" frameX="-95" frameY="-43" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10014" x="570" y="250" width="119" height="74" frameX="-100" frameY="-43" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10015" x="689" y="250" width="119" height="61" frameX="-100" frameY="-56" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10016" x="808" y="250" width="223" height="108" frameX="0" frameY="-17" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10017" x="1031" y="250" width="223" height="108" frameX="0" frameY="-17" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10018" x="1254" y="250" width="193" height="118" frameX="-28" frameY="-30" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10019" x="1447" y="250" width="193" height="118" frameX="-28" frameY="-30" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10020" x="1640" y="250" width="154" height="127" frameX="-55" frameY="-33" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10021" x="1794" y="250" width="154" height="127" frameX="-55" frameY="-33" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10022" x="0" y="377" width="136" height="151" frameX="-79" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10023" x="136" y="377" width="136" height="151" frameX="-79" frameY="-34" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10024" x="272" y="377" width="166" height="154" frameX="-65" frameY="-40" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10025" x="438" y="377" width="166" height="154" frameX="-65" frameY="-40" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10026" x="604" y="377" width="179" height="155" frameX="-57" frameY="-51" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10027" x="783" y="377" width="179" height="169" frameX="-57" frameY="-51" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10028" x="962" y="377" width="190" height="161" frameX="-50" frameY="-59" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10029" x="1152" y="377" width="190" height="170" frameX="-50" frameY="-59" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10030" x="1342" y="377" width="200" height="160" frameX="-45" frameY="-70" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10031" x="1542" y="377" width="200" height="160" frameX="-45" frameY="-70" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10032" x="1742" y="377" width="228" height="168" frameX="-42" frameY="-76" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10033" x="1742" y="377" width="228" height="168" frameX="-42" frameY="-76" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10034" x="0" y="547" width="244" height="171" frameX="-45" frameY="-85" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10035" x="0" y="547" width="244" height="171" frameX="-45" frameY="-85" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10036" x="244" y="547" width="266" height="182" frameX="-51" frameY="-84" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10037" x="244" y="547" width="266" height="182" frameX="-51" frameY="-84" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10038" x="510" y="547" width="291" height="186" frameX="-55" frameY="-81" frameWidth="420" frameHeight="267"/>
+	<SubTexture name="Snow 10039" x="510" y="547" width="291" height="186" frameX="-55" frameY="-81" frameWidth="420" frameHeight="267"/>
+</TextureAtlas>
