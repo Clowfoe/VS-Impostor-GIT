@@ -3391,6 +3391,7 @@ class PlayState extends MusicBeatState
 			// dad.dance();
 		}
 
+		// Animations for Vs impostor
 		if (curStep == 1794 && curSong == 'Sussus-Moogus')
             {
                 dad.playAnim('shoot1', false);
@@ -3407,9 +3408,13 @@ class PlayState extends MusicBeatState
             {
                 boyfriend.playAnim('deadamong', false);
 			}
-        if (curStep == 1802 && curSong == 'Sussus-Moogus')
+		if (curStep == 1647 && curSong == 'Sabotage')
+			{
+					boyfriend.playAnim('deadamong', false);
+			}
+        if (curStep == 2048 && curSong == 'Meltdown')
             {
-                gf.playAnim('dead', false);
+                boyfriend.playAnim('hey', false);
 
             }
 		if (curStep == 1812 && curSong == 'Sussus-Moogus')
@@ -3507,7 +3512,7 @@ class PlayState extends MusicBeatState
             }
         }
 
-		if (!boyfriend.animation.curAnim.name.startsWith("sing") && !boyfriend.animation.curAnim.name.startsWith("scaredamong") && !boyfriend.animation.curAnim.name.startsWith("deadamong"))
+		if (!boyfriend.animation.curAnim.name.startsWith("sing") && !boyfriend.animation.curAnim.name.startsWith("scaredamong") && !boyfriend.animation.curAnim.name.startsWith("deadamong")&& !boyfriend.animation.curAnim.name.startsWith("hey"))
 			{
 				boyfriend.playAnim('idle');
 			}
