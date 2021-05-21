@@ -3392,6 +3392,11 @@ class PlayState extends MusicBeatState
 		}
 
 		// Animations for Vs impostor
+		if (curStep == 1802 && curSong == 'Sussus-Moogus')
+            {
+                gf.playAnim('dead', false);
+
+            }
 		if (curStep == 1794 && curSong == 'Sussus-Moogus')
             {
                 dad.playAnim('shoot1', false);
