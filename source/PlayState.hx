@@ -3403,6 +3403,7 @@ class PlayState extends MusicBeatState
             }
 		if (curStep == 1620 && curSong == 'Sabotage')
             {
+				FlxG.sound.play(Paths.soundRandom('gunshot', 0, 15));
                 dad.playAnim('shoot2', false);
             }
 		if (curStep == 1640 && curSong == 'Sabotage')
