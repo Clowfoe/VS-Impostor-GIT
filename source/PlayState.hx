@@ -220,6 +220,7 @@ class PlayState extends MusicBeatState
 	// sussy variable
 	var _cb = 0;
 
+	var flashSprite:FlxSprite = new FlxSprite(-70, -70).makeGraphic(5000, 5000, 0xFFb30000);
 
 	override public function create()
 	{
@@ -3384,6 +3385,8 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
+		flashSprite.alpha -= 0.08;
+
 		#if windows
 		if (executeModchart && luaModchart != null)
 		{
@@ -3396,6 +3399,9 @@ class PlayState extends MusicBeatState
 		{
 			// dad.dance();
 		}
+
+		// VS IMPOSTOR SHIT
+		
 
 		//var sussusFlashes = [375, 380, 384, 392, 400, 410, 415];
 		//var _g = 0;
@@ -3460,6 +3466,11 @@ class PlayState extends MusicBeatState
 	var lightningStrikeBeat:Int = 0;
 	var lightningOffset:Int = 8;
 
+	function bgFlash():Void
+	{
+		flashSprite.alpha = 0.4;
+	}
+
 	override function beatHit()
 	{
 		super.beatHit();
@@ -3481,9 +3492,15 @@ class PlayState extends MusicBeatState
 		var saboBeats = [16, 24, 32, 40, 48, 56, 62, 63, 272, 280, 288, 296, 302, 303, 376, 384, 892];
 		var meltBeats = [0, 16, 32, 48, 64, 72, 80, 88, 96, 104, 112, 120, 126, 127, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 382, 464, 480, 496, 512];
 		var _b = 0;
-		//FlxG.watch.addQuick("beepP1!", _cb); DEBUG SHIT, dont worry bout this!
+		//FlxG.watch.addQuick("Flash Timer", _cb); debug stuff
+
+		add(flashSprite);
+		flashSprite.alpha = 0;
+		flashSprite.scrollFactor.set(0, 0);
+
 		if(curSong == 'Sussus-Moogus') // sussus flashes
 		{
+			
 			if(curBeat == 97 || curBeat == 192 || curBeat == 320)
 				_cb = 1;
 				if(curBeat > 98 && curBeat < 160 || curBeat > 192 && curBeat < 224 || curBeat > 320 && curBeat < 382 || curBeat == 98 || curBeat == 160 || curBeat == 192 || curBeat == 224 || curBeat == 320 || curBeat == 382)
@@ -3491,7 +3508,7 @@ class PlayState extends MusicBeatState
 					_cb++;
 					if(_cb == 2)
 					{
-						boyfriend.playAnim('hey', false); // TODO: flash here
+						bgFlash();
 						_cb = 0;
 					}
 				}
@@ -3500,7 +3517,7 @@ class PlayState extends MusicBeatState
 				++_b;
 				if(curBeat == susflash)
 				{
-					boyfriend.playAnim('hey', false); // TODO: flash here
+					bgFlash();
 				}
 			}
 		}
@@ -3511,7 +3528,7 @@ class PlayState extends MusicBeatState
 					++_b;
 					if(curBeat == sabflash)
 					{
-						boyfriend.playAnim('hey', false); // TODO: flash here
+						bgFlash();
 					}
 				}
 
@@ -3522,7 +3539,7 @@ class PlayState extends MusicBeatState
 					_cb++;
 					if(_cb == 4)
 					{
-						boyfriend.playAnim('hey', false); // TODO: flash here
+						bgFlash();
 						_cb = 0;
 					}
 				}
@@ -3534,17 +3551,19 @@ class PlayState extends MusicBeatState
 				++_b;
 				if(curBeat == meltflash)
 				{
-					boyfriend.playAnim('hey', false); // TODO: flash here
+					bgFlash();
 				}
 			}
-			if(curBeat == 127 || curBeat == 381)
+			if(curBeat == 127)
 				_cb = 3;
+			if(curBeat == 382)
+				_cb = 1;
 			if(curBeat > 128 && curBeat < 192 || curBeat > 382 && curBeat < 448 || curBeat == 128 || curBeat == 192 || curBeat == 382 || curBeat == 448)
 			{
 				_cb++;
 				if(_cb == 4)
 				{
-					boyfriend.playAnim('hey', false); // TODO: flash here
+					bgFlash();
 					_cb = 0;
 				}
 			}
