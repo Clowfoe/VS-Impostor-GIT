@@ -336,6 +336,10 @@ class PlayState extends MusicBeatState
 				];
 			case 'sussus-moogus':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('sussus-moogus/moogus'));
+			case 'sabotage':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('sabotage/sabotige'));
+			case 'meltdown':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('meltdown/melt'));
 			case 'roses':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
@@ -758,6 +762,14 @@ class PlayState extends MusicBeatState
 					rocks.active = false;
 					add(rocks);
 
+					var crowd:FlxSprite = new FlxSprite(0, 150).loadGraphic(Paths.image('crowd'));
+					crowd.setGraphicSize(Std.int(crowd.width * 1.5));
+					crowd.updateHitbox();
+					crowd.antialiasing = true;
+					crowd.scrollFactor.set(0.9, 0.9);
+					crowd.active = false;
+					add(crowd);
+
 					var stageFront:FlxSprite = new FlxSprite(-400, 450).loadGraphic(Paths.image('polusGround'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.5));
 					stageFront.updateHitbox();
@@ -875,7 +887,11 @@ class PlayState extends MusicBeatState
 			case 'monster-christmas':
 				dad.y += 130;
 			case 'impostor':
-				camPos.y += -400;
+				camPos.y += -200;
+				camPos.x += 400;
+			case 'impostor2':
+				camPos.y += -200;
+				camPos.x += 400;
 			case 'pico':
 				camPos.x += 600;
 				dad.y += 300;
@@ -944,6 +960,14 @@ class PlayState extends MusicBeatState
 			add(limo);
 
 		add(dad);
+		var deadass:FlxSprite = new FlxSprite(800, 650).loadGraphic(Paths.image('bfdead'));
+		deadass.setGraphicSize(Std.int(deadass.width * 1));
+		deadass.updateHitbox();
+		deadass.antialiasing = true;
+		deadass.scrollFactor.set(1, 1);
+		deadass.active = false;
+		if (curStage == 'meltdown')
+			add(deadass);
 		add(boyfriend);
 
 		if (curStage == 'stage')
@@ -1106,7 +1130,7 @@ class PlayState extends MusicBeatState
 			add(replayTxt);
 		}
 		// Literally copy-paste of the above, fu
-		botPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "BOTPLAY", 20);
+		botPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "", 20);
 		botPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		botPlayState.scrollFactor.set();
 		
@@ -1177,6 +1201,10 @@ class PlayState extends MusicBeatState
 						});
 					});
 				case 'sussus-moogus':
+					schoolIntro(doof);
+				case 'sabotage':
+					schoolIntro(doof);
+				case 'meltdown':
 					schoolIntro(doof);
 				case 'roses':
 					FlxG.sound.play(Paths.sound('ANGRY'));

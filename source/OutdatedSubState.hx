@@ -16,16 +16,15 @@ class OutdatedSubState extends MusicBeatState
 	override function create()
 	{
 		super.create();
-		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		var bg:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('screen'));
 		add(bg);
-		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"Kade Engine is Outdated!\n"
-			+ MainMenuState.kadeEngineVer
-			+ " is your current version\nwhile the most recent version is " + needVer
-			+ "!\nPress Space to go to the github or ESCAPE to ignore this!!",
+		var txt:FlxText = new FlxText(0, 600, FlxG.width,
+			"Thanks for playing VS Impostor!\n"
+			+ "The entire team worked their hardest for the last month so we hope you enjoy!" 
+			+ "\nWARNING, There are flashing lights in this mod"
+			+ "\nPress Esc or Space to continue!",
 			32);
-		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
-		txt.screenCenter();
+		txt.setFormat("CCComicrazy Regular", 20, FlxColor.WHITE, CENTER);
 		add(txt);
 	}
 
@@ -33,7 +32,8 @@ class OutdatedSubState extends MusicBeatState
 	{
 		if (controls.ACCEPT)
 		{
-			FlxG.openURL("https://github.com/KadeDev/Kade-Engine/releases/latest");
+			leftState = true;
+			FlxG.switchState(new MainMenuState());
 		}
 		if (controls.BACK)
 		{

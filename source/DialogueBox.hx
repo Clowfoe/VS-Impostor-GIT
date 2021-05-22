@@ -60,22 +60,28 @@ class DialogueBox extends FlxSpriteGroup
 				bgFade.alpha = 0.7;
 		}, 5);
 
-		box = new FlxSprite(-20, 45);
+		box = new FlxSprite(-20, 455);
 		
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
 			case 'sussus-moogus':
 				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				box.frames = Paths.getSparrowAtlas('among/UI/speech_bubble_talking');
+				box.animation.addByPrefix('normalOpen', 'speech bubble normal', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
 
 			case 'sabotage':
 				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				box.frames = Paths.getSparrowAtlas('among/UI/speech_bubble_talking');
+				box.animation.addByPrefix('normalOpen', 'speech bubble normal', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+
+			case 'meltdown':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('among/UI/speech_bubble_talking');
+				box.animation.addByPrefix('normalOpen', 'speech bubble normal', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
 		}
 
 		this.dialogueList = dialogueList;
@@ -83,34 +89,36 @@ class DialogueBox extends FlxSpriteGroup
 		if (!hasDialog)
 			return;
 		
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+		portraitLeft = new FlxSprite(-170, 470);
+		portraitLeft.frames = Paths.getSparrowAtlas('among/impostorPort');
+		portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.15));
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
+		portraitLeft.antialiasing = true;
+
+		portraitRight = new FlxSprite(700, 470);
+		portraitRight.frames = Paths.getSparrowAtlas('among/bfPortrait');
+		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.15));
+		portraitRight.updateHitbox();
+		portraitRight.scrollFactor.set();
+		portraitRight.antialiasing = true;
+
+		
+		box.animation.play('normalOpen');
+		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 1));
+		box.updateHitbox();
+		add(box);
+		add(portraitRight);
+		portraitRight.visible = false;
 		add(portraitLeft);
 		portraitLeft.visible = false;
 
-		portraitRight = new FlxSprite(0, 40);
-		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-		portraitRight.updateHitbox();
-		portraitRight.scrollFactor.set();
-		add(portraitRight);
-		portraitRight.visible = false;
-		
-		box.animation.play('normalOpen');
-		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
-		box.updateHitbox();
-		add(box);
-
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
-		add(handSelect);
+		
 
 
 		if (!talkingRight)
@@ -121,11 +129,11 @@ class DialogueBox extends FlxSpriteGroup
 		dropText = new FlxText(242, 502, Std.int(FlxG.width * 0.6), "", 32);
 		dropText.font = 'Pixel Arial 11 Bold';
 		dropText.color = 0xFFD89494;
-		add(dropText);
+		
 
-		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 32);
-		swagDialogue.font = 'Pixel Arial 11 Bold';
-		swagDialogue.color = 0xFF3F2021;
+		swagDialogue = new FlxTypeText(260, 500, Std.int(FlxG.width * 1.1), "", 32);
+		swagDialogue.font = 'arial';
+		swagDialogue.color = 0xFF000000;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
