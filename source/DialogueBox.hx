@@ -67,7 +67,13 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			case 'sussus-moogus':
 				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
+			case 'sabotage':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 		}

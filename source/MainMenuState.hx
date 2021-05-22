@@ -28,7 +28,7 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'options', 'donate'];
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -155,9 +155,9 @@ class MainMenuState extends MusicBeatState
 				if (optionShit[curSelected] == 'donate')
 				{
 					#if linux
-					Sys.command('/usr/bin/xdg-open', ["https://ninja-muffin24.itch.io/funkin", "&"]);
+					Sys.command('/usr/bin/xdg-open', ["https://discord.gg/9V8Gwa6zGE", "&"]);
 					#else
-					FlxG.openURL('https://ninja-muffin24.itch.io/funkin');
+					FlxG.openURL('https://discord.gg/9V8Gwa6zGE');
 					#end
 				}
 				else
