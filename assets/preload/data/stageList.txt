@@ -6,3 +6,5 @@ mall
 mallEvil
 school
 schoolEvil
+sabotage
+meltdown
