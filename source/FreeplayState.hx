@@ -30,6 +30,8 @@ class FreeplayState extends MusicBeatState
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
 
+	var isDebugList:Bool = false;
+
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
 
@@ -38,12 +40,13 @@ class FreeplayState extends MusicBeatState
 	override function create()
 	{
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
+		var initDebuglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglistDebug'));
 
 		for (i in 0...initSonglist.length)
-		{
-			var data:Array<String> = initSonglist[i].split(':');
-			songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
-		}
+			{
+				var data:Array<String> = initSonglist[i].split(':');
+				songs.push(new SongMetadata(data[0], Std.parseInt(data[2]), data[1]));
+			}
 
 		/* 
 			if (FlxG.sound.music != null)
@@ -149,7 +152,7 @@ class FreeplayState extends MusicBeatState
 	public function addWeek(songs:Array<String>, weekNum:Int, ?songCharacters:Array<String>)
 	{
 		if (songCharacters == null)
-			songCharacters = ['bf'];
+			songCharacters = ['impostor'];
 
 		var num:Int = 0;
 		for (song in songs)

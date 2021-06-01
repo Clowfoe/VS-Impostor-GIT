@@ -6,6 +6,7 @@ class ButtonRemapSubstate extends FlxSubState
 {
 	public function new()
 	{
+		//sussy
 		super();
 	}
 }

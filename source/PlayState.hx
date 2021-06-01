@@ -310,7 +310,7 @@ class PlayState extends MusicBeatState
 		persistentDraw = true;
 
 		if (SONG == null)
-			SONG = Song.loadFromJson('tutorial');
+			SONG = Song.loadFromJson('sussus-moogus');
 
 		Conductor.mapBPMChanges(SONG);
 		Conductor.changeBPM(SONG.bpm);
@@ -859,6 +859,8 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf';
 			case 'ghostgf':
 				gfVersion = 'ggf';
+			case 'gf-sad':
+				gfVersion = 'gf-sad';
 			default:
 				gfVersion = 'gf';
 		}
