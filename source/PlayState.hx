@@ -79,8 +79,6 @@ class PlayState extends MusicBeatState
 	public static var goods:Int = 0;
 	public static var sicks:Int = 0;
 
-	var crowd:MogusBoppers;
-
 	public static var songPosBG:FlxSprite;
 	public static var songPosBar:FlxBar;
 
@@ -764,9 +762,10 @@ class PlayState extends MusicBeatState
 					rocks.active = false;
 					add(rocks);
 
-					crowd = new MogusBoppers(0, 150);
+					var crowd:FlxSprite = new FlxSprite(0, 150).loadGraphic(Paths.image('crowd'));
 					crowd.setGraphicSize(Std.int(crowd.width * 1.5));
 					crowd.updateHitbox();
+					crowd.antialiasing = true;
 					crowd.scrollFactor.set(0.9, 0.9);
 					crowd.active = false;
 					add(crowd);
@@ -961,7 +960,6 @@ class PlayState extends MusicBeatState
 			add(limo);
 
 		add(dad);
-		//the DEAD BITCH
 		var deadass:FlxSprite = new FlxSprite(800, 650).loadGraphic(Paths.image('bfdead'));
 		deadass.setGraphicSize(Std.int(deadass.width * 1));
 		deadass.updateHitbox();
@@ -3415,9 +3413,6 @@ class PlayState extends MusicBeatState
 			resyncVocals();
 		}
 
-		//flashSprite.alpha = 0.4;
-		//FlxTween.tween(flashSprite.alpha, 0, 0.15);
-		//had to remove cuz it crashed the game ooopss
 		flashSprite.alpha -= 0.08;
 
 		#if windows
@@ -3496,16 +3491,12 @@ class PlayState extends MusicBeatState
 		#end
 
 	}
- 
+
 	var lightningStrikeBeat:Int = 0;
 	var lightningOffset:Int = 8;
 
 	function bgFlash():Void
 	{
-		//oops im stupid so commented out the tweening version
-		//flashSprite.alpha = 0;
-		//FlxTween.tween(flashSprite.alpha, 0.4, 0.15);
-		trace('BG FLASH FUNNY');
 		flashSprite.alpha = 0.4;
 	}
 
@@ -3525,11 +3516,6 @@ class PlayState extends MusicBeatState
 			luaModchart.executeState('beatHit',[curBeat]);
 		}
 		#end
-
-		if(curStage == 'meltdown')
-			{
-				crowd.dance();
-			}
 
 		var sussusBeats = [94, 95, 288, 296, 304, 312, 318, 319];
 		var saboBeats = [16, 24, 32, 40, 48, 56, 62, 63, 272, 280, 288, 296, 302, 303, 376, 384, 892];
