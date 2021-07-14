@@ -3,4 +3,3 @@ gf-car
 gf-christmas
 gf-pixel
 ghostgf
-gf-sad
